@@ -1,9 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprehensive ML Code</title>
+</head>
 <body>
-
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
-
+    <h1>Comprehensive ML Code</h1>
+    <p>Please provide the following parameters:</p>
+    <form action="/predict" method="post">
+        <label for="brittleness">Brittleness:</label>
+        <input type="number" id="brittleness" name="brittleness" step="0.01" required><br><br>
+        
+        <label for="fracture_spacing">Fracture Spacing:</label>
+        <input type="number" id="fracture_spacing" name="fracture_spacing" step="0.01" required><br><br>
+        
+        <label for="alpha_angle">Alpha Angle:</label>
+        <input type="number" id="alpha_angle" name="alpha_angle" step="0.01" required><br><br>
+        
+        <label for="ucs">UCS:</label>
+        <input type="number" id="ucs" name="ucs" step="0.01" required><br><br>
+        
+        <input type="submit" value="Submit">
+    </form>
 </body>
 </html>
